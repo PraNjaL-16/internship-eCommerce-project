@@ -67,12 +67,11 @@ function App() {
   }, []);
 
   // diable right click
-  window.addEventListener('contextmenu', (e) => e.preventDefault());
+  // window.addEventListener('contextmenu', (e) => e.preventDefault());
 
   return (
     <Router>
-      <Header />
-
+      {!isAuthenticated && <Header />}
       {isAuthenticated && <UserOptions user={user} />}
 
       {stripeApiKey && (

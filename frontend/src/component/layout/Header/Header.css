@@ -1,11 +1,22 @@
-.speedDial {
+.shoppingCart {
+  position: fixed;
+  right: 6vmax;
+  top: 3vmax;
+  color: aliceblue;
+}
+
+.loginButton {
+  position: fixed;
+  left: 3vmax;
+  top: 3vmax;
+  width: 10px;
+  color: aliceblue;
+}
+
+.logoutIcon {
   position: fixed;
   right: 3vmax;
   top: 3vmax;
-}
-
-.speedDialIcon {
-  width: 56px;
-  height: 56px;
-  border-radius: 100%;
+  width: 10px;
+  color: aliceblue;
 }

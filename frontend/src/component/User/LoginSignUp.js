@@ -68,11 +68,11 @@ const LoginSignUp = ({ history, location }) => {
   };
 
   // "location.search" will be true if there's any query string in the URL
-  const redirect = location.search ? location.search.split('=')[1] : '/account';
+  const redirect = location.search ? location.search.split('=')[1] : '/';
 
   useEffect(() => {
     if (error) {
-      alert.error(error);
+      // alert.error(error);
       dispatch(clearErrors());
     }
 
