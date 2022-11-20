@@ -1,22 +1,34 @@
-.shoppingCart {
-  position: fixed;
-  right: 6vmax;
-  top: 3vmax;
-  color: aliceblue;
-}
-
 .loginButton {
   position: fixed;
-  left: 3vmax;
-  top: 3vmax;
+  left: 2vmax;
+  top: 2vmax;
   width: 10px;
-  color: aliceblue;
+  color: black;
+}
+
+.homeButton {
+  width: 10px;
+  color: black;
+}
+
+.shoppingCart {
+  width: 10px;
+  color: black;
 }
 
 .logoutIcon {
-  position: fixed;
-  right: 3vmax;
-  top: 3vmax;
   width: 10px;
-  color: aliceblue;
+  color: black;
+  margin-right: 2px;
+}
+
+.flexNav {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+  gap: 5px;
+  right: 2vmax;
+  top: 2vmax;
 }

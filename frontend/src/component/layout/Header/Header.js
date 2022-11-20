@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import AccountBoxIcon from '@material-ui/icons/AccountBox';
+import PersonIcon from '@material-ui/icons/Person';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -7,7 +7,7 @@ const Header = () => {
     <Fragment>
       <Link to="/login">
         <i className="loginButton">
-          <AccountBoxIcon />
+          <PersonIcon />
         </i>
       </Link>
     </Fragment>

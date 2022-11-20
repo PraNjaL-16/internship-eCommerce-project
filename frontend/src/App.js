@@ -19,8 +19,6 @@ import Cart from './component/Cart/Cart';
 function App() {
   const { isAuthenticated, user } = useSelector((state) => state.user);
 
-  const [stripeApiKey, setStripeApiKey] = useState('');
-
   useEffect(() => {
     WebFont.load({
       google: {

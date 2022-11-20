@@ -1,5 +1,5 @@
 .banner {
-  background-image: url('../../images/cover.jfif');
+  background-image: url('../../images/cover1.avif');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,7 +14,6 @@
 
 .banner > h1 {
   margin: 5vmax;
-
   font: 600 2.5vmax 'Roboto';
 }
 
@@ -38,7 +37,7 @@
   color: white;
 }
 
-.banner::after {
+/* .banner::after {
   content: '';
   width: 100vw;
   height: 100vmin;
@@ -48,7 +47,7 @@
   left: 0;
   clip-path: polygon(100% 68%, 0 100%, 100% 100%);
   max-width: 100%;
-}
+} */
 
 .homeHeading {
   text-align: center;

@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import './Header.css';
 import { SpeedDial, SpeedDialAction } from '@material-ui/lab';
+import HomeIcon from '@material-ui/icons/Home';
 import Backdrop from '@material-ui/core/Backdrop';
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import PersonIcon from '@material-ui/icons/Person';
@@ -58,16 +59,23 @@ const UserOptions = ({ user }) => {
 
   return (
     <Fragment>
-      <Link onClick={cart}>
-        <i className="shoppingCart">
-          <ShoppingCartIcon />
-        </i>
-      </Link>
-      <Link onClick={logoutUser}>
-        <i className="logoutIcon">
-          <ExitToAppIcon />
-        </i>
-      </Link>
+      <div className="flexNav">
+        <Link to="/">
+          <i className="homeButton">
+            <HomeIcon />
+          </i>
+        </Link>
+        <Link onClick={cart}>
+          <i className="shoppingCart">
+            <ShoppingCartIcon />
+          </i>
+        </Link>
+        <Link onClick={logoutUser}>
+          <i className="logoutIcon">
+            <ExitToAppIcon />
+          </i>
+        </Link>
+      </div>
     </Fragment>
   );
 };
