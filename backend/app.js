@@ -13,8 +13,6 @@ if (process.env.NODE_ENV !== 'PRODUCTION') {
 // route imports
 const product = require('./routes/productRoutes');
 const user = require('./routes/userRoutes');
-const order = require('./routes/orderRoutes');
-const payment = require('./routes/paymentRoute');
 const errorMiddleware = require('./middleware/error');
 
 const app = express();
@@ -32,8 +30,6 @@ app.use(fileUpload());
 // API routes
 app.use('/api/v1', product);
 app.use('/api/v1', user);
-app.use('/api/v1', order);
-app.use('/api/v1', payment);
 
 // global error handling middleware
 app.use(errorMiddleware);
